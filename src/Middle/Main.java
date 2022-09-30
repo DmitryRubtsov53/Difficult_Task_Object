@@ -30,6 +30,7 @@ public class Main {
         printListBooks (books);
 
     }
+    // Мои методы ****************************************************************************************
         public static Book[] addBooks(Book[] books, Book[] bookNew) {
             int j = 0;
             // Находим своболную ячейку массива и записываем новую книгу:
