@@ -12,7 +12,7 @@ public class Book {
 
     public int getYearPublishing() { return yearPublishing; }
 
-    // конструктор
+    // конструктор класса
     public Book (String bookName, String autor, int yearPublishing) {
         this.bookName = bookName;
         this.autor = autor;
