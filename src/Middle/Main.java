@@ -11,11 +11,11 @@ public class Main {
         books[3] = new Book("Три товарища", "Э.М. Ремарк" , 1997);
         books[4] = new Book("Старик и море", "Э. Хеменгуэй" , 1992);
         books[5] = new Book("Алые паруса", "Александр Грин" , 1968);
-        books[6] = new Book(null, null , 0);
-        books[7] = new Book(null, null , 0);
-        books[8] = new Book(null, null , 0);
-        books[9] = new Book(null, null , 0);
-        books[10] = new Book(null, null , 0);
+        //books[6] = new Book(null, null , 0);
+        //books[7] = new Book(null, null , 0);
+        //books[8] = new Book(null, null , 0);
+        //books[9] = new Book(null, null , 0);
+        //books[10] = new Book(null, null , 0);
 
         Book [] bookNew = new Book[11];   // Добавочный список книг
 
@@ -35,7 +35,7 @@ public class Main {
             int j = 0;
             // Находим своболную ячейку массива и записываем новую книгу:
             for (int i = 0; i < books.length; i++) {
-                if (books[i].getBookName() == null) {
+                if (books[i] == null) {            // БЫЛО (books[i].getBookName() == null)
                     books[i] = bookNew[j];
                     j++;
                 }
